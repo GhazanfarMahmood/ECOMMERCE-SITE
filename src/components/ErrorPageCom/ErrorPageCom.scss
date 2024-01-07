@@ -1,0 +1,24 @@
+.error-page-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 6rem auto;
+    font-family: var(--primary-font-family);
+
+    h1{
+        font-size: 7rem;
+    }
+
+    h3{
+        font-size: 1.5rem;
+        margin-bottom: 15px;
+    }
+    p{
+        font-size: 1rem;
+        font-weight: 700;
+        margin-bottom: 10px;
+    }
+    a{
+        text-decoration: none;
+    }
+}

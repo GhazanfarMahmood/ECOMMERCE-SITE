@@ -1,0 +1,75 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: var(--primary-font-family);
+  padding-top: 20px;
+  padding-bottom: 20px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 10px -1px;
+
+  .nav-icon {
+    color: var(--secondary-color);
+    font-size: 2rem;
+    font-weight: 700;
+  }
+
+  .web-nav {
+    ul {
+      display: flex;
+      align-items: center;
+
+      a {
+        text-decoration: none;
+        font-size: 1.1rem;
+        margin-left: 1rem;
+        color: var(--dark-color);
+
+        &.active {
+          color: var(--secondary-color);
+        }
+
+        .add-cart-icon {
+          font-size: 1.8rem;
+          margin-left: 20px;
+        }
+      }
+    }
+
+    @media (max-width: 768px) {
+      display: none;
+    }
+  }
+
+  .nav-menu-icon {
+    display: none;
+    border: 2px solid var(--dark-color);
+    padding: 5px;
+    padding-bottom: 2px;
+    border-radius: 5px;
+
+    svg {
+      font-size: 23px;
+    }
+
+    @media (max-width: 768px) {
+      display: block;
+    }
+  }
+}
+.mob-nav {
+  ul {
+    display: flex;
+    flex-direction: column !important;
+
+    a {
+      margin-bottom: 20px;
+      color: var(--dark-color);
+      font-size: 1.1rem;
+      display: inline-block;
+
+      &.active {
+        color: var(--secondary-color);
+      }
+    }
+  }
+}
