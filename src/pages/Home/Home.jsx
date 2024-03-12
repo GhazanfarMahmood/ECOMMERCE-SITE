@@ -1,8 +1,13 @@
 import React from 'react'
 
+//PopularProducts of home page components
+import PopularProducts from '../../components/Home/PopularProducts/PopularProducts'
+
 const Home = () => {
   return (
-    <div className='height-width'>This is Home page</div>
+    <>
+    <PopularProducts />
+    </>
   )
 }
 

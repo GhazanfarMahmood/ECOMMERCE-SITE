@@ -13,14 +13,18 @@ import Home from "./pages/Home/Home";
 import Product from "./pages/Products/Product";
 import Contact from "./pages/Contact/Contact";
 import Cart from './pages/Cart/Cart'
+import ErrorPage from "./pages/ErrorPage/ErrorPage";
 
 // Route and Routes from react-router-dom
 import { Route, Routes } from "react-router-dom";
-import ErrorPage from "./pages/ErrorPage/ErrorPage";
+
+//ContextProvider
+import ContextProvider from "./Context/ContextProvider";
 
 const App = () => {
   return (
     <>
+    <ContextProvider>
       <NavBar />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -31,6 +35,7 @@ const App = () => {
         <Route path="*" element={<ErrorPage />} />
       </Routes>
       <Footer />
+      </ContextProvider>
     </>
   );
 };

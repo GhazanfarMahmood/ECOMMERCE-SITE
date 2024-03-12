@@ -1,0 +1,47 @@
+.popular-product-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3rem;
+
+    .popular-products{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: var(--display-gap);
+        margin-top: 1.5rem;
+        
+        .popular-product-item{
+            border-radius: var(--primary-border-radius);
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            padding: 1rem;
+            width: 350px;
+            flex-grow: 1;
+
+            img{
+                height: 200px;
+               width: auto;
+            }
+
+            h3{
+                margin: 10px auto;
+            }
+ 
+            p{
+                margin-bottom: 10px;
+                font-weight: bold;
+
+                span{
+                    font-weight: normal;
+                }
+            }
+
+            .btn-gap{
+                display: flex;
+                gap: 10px;
+                
+               
+            }
+        }
+    }
+}
