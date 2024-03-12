@@ -14,6 +14,7 @@ import Product from "./pages/Products/Product";
 import Contact from "./pages/Contact/Contact";
 import Cart from './pages/Cart/Cart'
 import ErrorPage from "./pages/ErrorPage/ErrorPage";
+import Description from "./pages/Description/Description";
 
 // Route and Routes from react-router-dom
 import { Route, Routes } from "react-router-dom";
@@ -33,6 +34,7 @@ const App = () => {
         <Route path="/contact" element={<Contact />} />
         <Route path="/cart" element={<Cart />} />
         <Route path="*" element={<ErrorPage />} />
+        <Route path="/description" element={<Description />} />
       </Routes>
       <Footer />
       </ContextProvider>

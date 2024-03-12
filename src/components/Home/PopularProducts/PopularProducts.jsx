@@ -15,7 +15,7 @@ const PopularProducts = () => {
     <div className="popular-product-container ms-3">
       <h1>Popular <span>Products</span></h1>
       <div className="popular-products">
-        {limitedProductList.map((products) =>{
+        {limitedProductList.length > 0 ? (limitedProductList.map((products) =>{
           return (
           <div key={products.id} className='popular-product-item'>   
             <img src={products.image} alt={products.title} />
@@ -26,7 +26,7 @@ const PopularProducts = () => {
             <button>Description</button>
             </div>
           </div>)
-        })} 
+        })) : (<div className='loader'></div>)} 
       </div>
       </div>
     </>

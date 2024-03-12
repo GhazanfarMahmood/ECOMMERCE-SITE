@@ -1,12 +1,14 @@
 import React from 'react'
 
-//PopularProducts of home page components
+//Components of Home page
 import PopularProducts from '../../components/Home/PopularProducts/PopularProducts'
+import NewlyArrival from '../../components/Home/NewlyArrival/NewlyArrival'
 
 const Home = () => {
   return (
     <>
     <PopularProducts />
+    <NewlyArrival />
     </>
   )
 }
