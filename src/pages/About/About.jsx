@@ -1,12 +1,14 @@
 import React from 'react'
 import BreadCrumbLink from '../../common/BreadCrumbLink/BreadCrumbLink'
+import AboutUs from '../../components/About/AboutUs/AboutUs'
+import Services from '../../components/About/Services/Services'
 
 const About = () => {
   return (
     <>
-    <div className='height-width'>
       <BreadCrumbLink pageName={"About"} />
-      This is the about page</div>
+     <AboutUs />
+     <Services />
     </>
   )
 }
