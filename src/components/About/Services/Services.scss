@@ -1,0 +1,60 @@
+.services-container {
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 3rem;
+
+  .services-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .services-items {
+    margin-top: 2rem;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    .services-card{
+        display: flex;
+        align-items: start;
+        padding: 1.2rem;
+        gap: 20px;
+        width: 300px;
+        border-radius: var(--primary-border-radius);
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        flex-grow: 1;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+
+        
+
+        span{
+            color: var(--secondary-color);
+            font-size: 2rem;
+            margin-top: 10px;
+            transition: all 0.3s ease-in-out;
+        }
+
+        h3{
+            margin-bottom: 5px;
+        }
+        p{
+            font-size: 1rem;
+        }
+ 
+        &:hover{
+            background-color: var(--secondary-color);
+        }
+
+        &:hover, &:hover span{
+            color: var(--light-color) ;
+        }
+    }
+  }
+}
