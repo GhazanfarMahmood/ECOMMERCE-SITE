@@ -1,4 +1,6 @@
 import axios from 'axios';
+
+//useEffect and useState Hooks Imported from react
 import React, { useEffect, useState } from 'react'
 
 const UseProducts = () => {

@@ -1,4 +1,6 @@
 import React from 'react'
+
+//CrumbLink component
 import BreadCrumbLink from '../../common/BreadCrumbLink/BreadCrumbLink'
 
 const Cart = () => {

@@ -1,12 +1,18 @@
 import React from 'react'
+
+//BreakCrumbLink Component
 import BreadCrumbLink from '../../common/BreadCrumbLink/BreadCrumbLink'
+import ProductSection from '../../components/Products/ProductSection/ProductSection'
+import ProductCateogries from '../../components/Products/ProductCateogries/ProductCateogries'
 
 const Product = () => {
   return (
     <>
-    <div className='height-width'>
       <BreadCrumbLink pageName={"Product"} />
-      This is Product page</div>
+      <div className='ms-3'>
+        <ProductCateogries />
+         <ProductSection />
+      </div>
     </>
   )
 }

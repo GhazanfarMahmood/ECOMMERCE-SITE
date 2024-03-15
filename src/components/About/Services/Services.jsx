@@ -9,7 +9,7 @@ import { SERVICESDATA } from "../../../Utils/ServicesData";
 const Services = () => {
   return (
     <>
-      <div className="services-container ms-3">
+      <div className="services-container">
         <div className="services-box">
         <h1>
           Our <span>Services</span>
