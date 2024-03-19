@@ -1,0 +1,14 @@
+.product-cate-container{
+
+    border-right: 1px solid var(--dark-color);
+    .product-cate-card{
+        display: flex;
+        flex-direction: column;
+
+        button{
+                background: transparent;
+                color: black;
+                border: none;
+        }
+    }
+}
