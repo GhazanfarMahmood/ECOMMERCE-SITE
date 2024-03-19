@@ -7,7 +7,7 @@ const ProductCom = ({data}) => {
     <>
         
 
-<div className="product-container ms-3">
+<div className="common-product-container ">
       <h1>Popular <span>Products</span></h1>
       <div className="product-card">
         {data.length > 0 ? (data.map((products) =>{

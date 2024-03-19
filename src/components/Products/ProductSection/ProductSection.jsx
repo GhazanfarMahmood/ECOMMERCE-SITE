@@ -10,7 +10,9 @@ const ProductSection = () => {
 
   return (
     <>
+    <div className="product-sec-container">
     <ProductCom data={allProducts}/>
+    </div>
     </>
   )
 }

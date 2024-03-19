@@ -12,7 +12,9 @@ const NewlyArrival = () => {
      const limitedArrival = newArrivalProducts.slice(newArrivalProducts.length - 5 , newArrivalProducts.length -1)
   return (
     <>
+    <div className="ms-3">
     <ProductCom data= {limitedArrival} />
+    </div>
     </>
   )
 }

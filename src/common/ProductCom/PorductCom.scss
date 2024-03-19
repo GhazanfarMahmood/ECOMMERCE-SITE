@@ -1,6 +1,6 @@
-.product-container{
+.common-product-container{
     display: flex;
-    flex-direction: column;
+    flex-direction: column ;
     align-items: center;
     margin-top: 3rem;
 
@@ -20,7 +20,7 @@
 
             img{
                 height: 200px;
-               width: auto;
+               width: 200px;
             }
 
             h3{
