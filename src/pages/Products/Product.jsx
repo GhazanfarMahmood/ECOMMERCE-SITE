@@ -14,7 +14,7 @@ const Product = () => {
       <BreadCrumbLink pageName={"Product"} />
       <div className='ms-3 product-container'>
         <ProductCateogries />
-         <ProductSection />
+         {/* <ProductSection /> */}
       </div>
     </>
   )
