@@ -6,6 +6,7 @@ import "./Footer.scss";
 //NavLink imported from react-router-dom
 import { NavLink } from "react-router-dom";
 
+
 //Icons imported from react-icons
 import { FaLocationDot } from "react-icons/fa6";
 import { IoMdMail } from "react-icons/io";
@@ -13,6 +14,9 @@ import { MdLocalPhone } from "react-icons/md";
 import { FaFacebookF, FaLinkedinIn, FaTwitter } from "react-icons/fa";
 
 const Footer = () => {
+  
+
+
   return (
     <footer className="ps-3">
       <div className="footer-container">
@@ -37,12 +41,7 @@ const Footer = () => {
           <NavLink to={"/cart"}>Cart</NavLink>
         </div>
         <div className="footer-quick-links">
-          <h4>Quick Links</h4>
-          <NavLink to={"/"}>Link 1</NavLink>
-          <NavLink to={"/"}>Link 2</NavLink>
-          <NavLink to={"/"}>Link 3</NavLink>
-          <NavLink to={"/"}>Link 4</NavLink>
-          <NavLink to={"/"}>Link 5</NavLink>
+          <h4>Categories</h4>
         </div>
         <div className="footer-location">
           <h4>Location</h4>

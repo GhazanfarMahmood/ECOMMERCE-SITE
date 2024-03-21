@@ -2,13 +2,14 @@ import React from 'react'
 
 //CrumbLink component
 import BreadCrumbLink from '../../common/BreadCrumbLink/BreadCrumbLink'
+import CartComp from '../../components/Cart/CartComp'
 
 const Cart = () => {
   return (
     <>
-    <div className='height-width'>
+    <div className='ms-3'>
       <BreadCrumbLink pageName={"Cart"} />
-      This is Cart page</div>
+      <CartComp /></div>
     </>
   )
 }

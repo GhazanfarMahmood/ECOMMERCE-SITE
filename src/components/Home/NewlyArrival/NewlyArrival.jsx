@@ -13,7 +13,7 @@ const NewlyArrival = () => {
   return (
     <>
     <div className="ms-3">
-    <ProductCom data= {limitedArrival} />
+    <ProductCom data={limitedArrival} h1={"Latest"}/>
     </div>
     </>
   )

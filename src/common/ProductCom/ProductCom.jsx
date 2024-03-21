@@ -2,13 +2,13 @@ import React from 'react'
 
 import "./PorductCom.scss"
 
-const ProductCom = ({data}) => {
+const ProductCom = ({data, h1}) => {
   return (
     <>
         
 
 <div className="common-product-container ">
-      <h1>Popular <span>Products</span></h1>
+      <h1>{h1} <span>Products</span></h1>
       <div className="product-card">
         {data.length > 0 ? (data.map((products) =>{
           return (

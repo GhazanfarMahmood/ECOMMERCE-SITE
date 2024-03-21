@@ -15,7 +15,7 @@ const PopularProducts = () => {
     <>
     
       <div className="ms-3">
-     <ProductCom data={limitedProductList} />
+     <ProductCom data={limitedProductList} h1={"Popular"}/>
      </div>
     </>
   )

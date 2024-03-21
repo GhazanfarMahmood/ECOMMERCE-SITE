@@ -6,6 +6,7 @@ import "./ProductCategories.scss";
 import { TbCategoryPlus } from "react-icons/tb";
 import { ProductConsumer } from "../../../Context/ContextProvider";
 import ProductCom from "../../../common/ProductCom/ProductCom";
+import CategoriesButton from "./CategoriesButton";
 
 const ProductCategories = () => {
   const allProducts = ProductConsumer();
@@ -31,38 +32,9 @@ const ProductCategories = () => {
         <h3>
           Categories <TbCategoryPlus />
         </h3>
-        <button
-          onClick={() => handleCategoryClick(null)}
-          className={!selectedProduct && "newClass"}
-        >
-          All
-        </button>
-        <button
-          onClick={() => handleCategoryClick("men's clothing")}
-          className={selectedProduct === "men's clothing" && "newClass"}
-        >
-          Men's Category
-        </button>
-        <button
-          onClick={() => handleCategoryClick("women's clothing")}
-          className={selectedProduct === "women's clothing" && "newClass"}
-        >
-          Women's Category
-        </button>
-        <button
-          onClick={() => handleCategoryClick("jewelery")}
-          className={selectedProduct === "jewelery" && "newClass"}
-        >
-          Jewelry
-        </button>
-        <button
-          onClick={() => handleCategoryClick("electronics")}
-          className={selectedProduct === "electronics" && "newClass"}
-        >
-          Electronics
-        </button>
+        <CategoriesButton onclick={handleCategoryClick} selectedProduct={selectedProduct}/>
       </div>
-      <ProductCom data={filteredProducts} />
+      <ProductCom data={filteredProducts} h1={'All'} />
     </div>
   );
 };
