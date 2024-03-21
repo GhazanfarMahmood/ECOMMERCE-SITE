@@ -33,7 +33,11 @@
            &:hover{
             color: var(--secondary-color);
            }
+         
          }
+         .newClass {
+            color: var(--secondary-color);
+        }
 
          @media (max-width : 990px) {
             width:  100%;
