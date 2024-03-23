@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 //Footer scss
 import "./Footer.scss";
@@ -12,10 +12,10 @@ import { FaLocationDot } from "react-icons/fa6";
 import { IoMdMail } from "react-icons/io";
 import { MdLocalPhone } from "react-icons/md";
 import { FaFacebookF, FaLinkedinIn, FaTwitter } from "react-icons/fa";
+import CategoriesButton from "../CategoriesButton/CategoriesButton";
 
 const Footer = () => {
   
-
 
   return (
     <footer className="ps-3">
@@ -41,7 +41,7 @@ const Footer = () => {
           <NavLink to={"/cart"}>Cart</NavLink>
         </div>
         <div className="footer-quick-links">
-          <h4>Categories</h4>
+          <CategoriesButton />
         </div>
         <div className="footer-location">
           <h4>Location</h4>

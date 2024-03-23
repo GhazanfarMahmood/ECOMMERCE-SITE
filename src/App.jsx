@@ -1,4 +1,4 @@
-import React from "react";
+import React , { useState } from "react";
 
 //Css 
 import "./App.scss";
@@ -22,7 +22,11 @@ import { Route, Routes } from "react-router-dom";
 //ContextProvider
 import ContextProvider from "./Context/ContextProvider";
 
+
 const App = () => {
+
+
+
   return (
     <>
     <ContextProvider>
@@ -36,7 +40,7 @@ const App = () => {
         <Route path="*" element={<ErrorPage />} />
         <Route path="/description" element={<Description />} />
       </Routes>
-      <Footer />
+      <Footer  />
       </ContextProvider>
     </>
   );
