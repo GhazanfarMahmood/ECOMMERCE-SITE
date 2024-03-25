@@ -14,7 +14,11 @@
         text-decoration: none;
         gap: 5px;
         font-size: 1.2rem;
+        transition: all 0.5s;
 
+        &:hover{
+            color: var(--secondary-color);
+        }
     }
     span{
         display: flex;
