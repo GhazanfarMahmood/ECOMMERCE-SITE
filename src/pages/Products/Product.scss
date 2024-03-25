@@ -39,6 +39,10 @@
                 color: var(--secondary-color);
                }
             }
+
+            .newClass {
+                color: var(--secondary-color) ;
+              }
         }
 
         @media (max-width : 1024px) {

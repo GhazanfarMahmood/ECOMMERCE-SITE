@@ -89,11 +89,27 @@ footer{
                         font-size: 1.1rem;
                         border: 0px;
                         border-radius: 0px;
+                        
 
                         &:hover{
                             color: inherit;
                         }
                     }
+                    .newClass {
+                         position: relative;
+                        
+                        &::after{
+                            position: absolute;
+                            content: "";
+                            height: 3px;
+                            background: white;
+                            transform: translateX(-100%);
+                            top: 1.6rem;
+                            border-radius: 3px;
+                            width: 100% ; 
+                           
+                        }
+                      }
                 }
             }
         }

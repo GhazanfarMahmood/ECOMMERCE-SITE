@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 
 //Footer scss
 import "./Footer.scss";
@@ -12,9 +12,15 @@ import { FaLocationDot } from "react-icons/fa6";
 import { IoMdMail } from "react-icons/io";
 import { MdLocalPhone } from "react-icons/md";
 import { FaFacebookF, FaLinkedinIn, FaTwitter } from "react-icons/fa";
+
+//Categories Button 
 import CategoriesButton from "../CategoriesButton/CategoriesButton";
 
+//ProductCategory function from CategoryContext file
+import { ProductCategoryContext } from "../../Context/CategoryContext";
+
 const Footer = () => {
+  const {handleCategoryClick, selectedCategory} = useContext(ProductCategoryContext);
   
 
   return (
@@ -41,7 +47,7 @@ const Footer = () => {
           <NavLink to={"/cart"}>Cart</NavLink>
         </div>
         <div className="footer-quick-links">
-          <CategoriesButton />
+          <CategoriesButton handleCategoryClick={handleCategoryClick} selectedCategory={selectedCategory} />
         </div>
         <div className="footer-location">
           <h4>Location</h4>

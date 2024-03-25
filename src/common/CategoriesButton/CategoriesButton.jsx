@@ -1,29 +1,13 @@
 import React, {useState} from 'react'
 
+// Categories Button css
 import './CategoriesButton.scss';
 
+//Categories Icon from react icons
 import {TbCategoryPlus } from 'react-icons/tb'
-import { ProductConsumer } from '../../Context/ContextProvider';
 
-const CategoriesButton = () => {
-    const allProducts = ProductConsumer();
-    
-    const [selectedProduct, setSelectedProduct] = useState(null);
-  
-    const productByCategories = (category) => {
-      if (!category) return allProducts;
-  
-      return allProducts.filter((product) => product.category === category);
-    };
-  
-    const handleCategoryClick = (category) => {
-      setSelectedProduct(category);
-    };
-  
-    const filteredProducts = selectedProduct
-      ? productByCategories(selectedProduct)
-      : allProducts;
-
+const CategoriesButton = ({selectedCategory, handleCategoryClick}) => {
+ 
 
   return (
     <div className="Cate-button-container">
@@ -32,31 +16,31 @@ const CategoriesButton = () => {
         Categories <TbCategoryPlus />
       </h3>    <button
         onClick={() => handleCategoryClick(null)}
-        className={!selectedProduct && "newClass"}
+        className={!selectedCategory && "newClass"}
       >
         All
       </button>
       <button
         onClick={() => handleCategoryClick("men's clothing")}
-        className={selectedProduct === "men's clothing" && "newClass"}
+        className={selectedCategory === "men's clothing" && "newClass"}
       >
         Men's Category
       </button>
       <button
         onClick={() => handleCategoryClick("women's clothing")}
-        className={selectedProduct === "women's clothing" && "newClass"}
+        className={selectedCategory === "women's clothing" && "newClass"}
       >
         Women's Category
       </button>
       <button
         onClick={() => handleCategoryClick("jewelery")}
-        className={selectedProduct === "jewelery" && "newClass"}
+        className={selectedCategory === "jewelery" && "newClass"}
       >
         jewellery
       </button>
       <button
         onClick={() => handleCategoryClick("electronics")}
-        className={selectedProduct === "electronics" && "newClass"}
+        className={selectedCategory === "electronics" && "newClass"}
       >
         Electronics
       </button>
