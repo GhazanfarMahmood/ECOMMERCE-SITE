@@ -16,19 +16,18 @@ import CategoriesButton from '../../common/CategoriesButton/CategoriesButton'
 import ProductCom from '../../common/ProductCom/ProductCom'
 
 //Category Context from context file
-import { ProductCategoryContext } from '../../Context/CategoryContext'
+
 
 //ContextProvider from Context file
-import { ProductConsumer } from '../../Context/ContextProvider'
+import {  ProductContext } from '../../Context/ContextProvider'
 
 
 
 const Product = () => {
-  const allProducts = ProductConsumer();
   
-const { selectedCategory, handleCategoryClick } = useContext(ProductCategoryContext);
+const { selectedCategory, handleCategoryClick, products } = useContext(ProductContext);
 
-const filteredProducts = allProducts.filter((product) => !selectedCategory || product.category === selectedCategory);
+const filteredProducts = products.filter((product) => !selectedCategory || product.category === selectedCategory);
 
 
   return (

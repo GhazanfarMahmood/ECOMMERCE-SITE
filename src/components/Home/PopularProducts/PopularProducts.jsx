@@ -1,16 +1,18 @@
-import React from 'react'
+import React, {useContext} from 'react'
 
 //CSS
 import './PopularProducts.scss'
 
 // Data from Context Provider
-import { ProductConsumer } from '../../../Context/ContextProvider'
+
 import ProductCom from '../../../common/ProductCom/ProductCom';
 
+import  { ProductContext }  from '../../../Context/ContextProvider';
+
 const PopularProducts = () => {
-    const productList = ProductConsumer();
-    const limitedProductList = productList.slice(0, 5);
- 
+   const {products} = useContext(ProductContext);
+    const limitedProductList = products.slice(0, 5);
+
   return (
     <>
     

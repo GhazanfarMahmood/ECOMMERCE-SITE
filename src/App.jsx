@@ -20,11 +20,7 @@ import Description from "./pages/Description/Description";
 import { Route, Routes } from "react-router-dom";
 
 //ContextProvider
-import ContextProvider from "./Context/ContextProvider";
-
-//ContextCategory from Context Folder
-import { ProductCategoryProvider } from "./Context/CategoryContext";
-
+import { ContextProvider } from "./Context/ContextProvider";
 
 
 const App = () => {
@@ -33,7 +29,6 @@ const App = () => {
   return (
     <>
     <ContextProvider>
-      <ProductCategoryProvider>
       <NavBar />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -45,9 +40,7 @@ const App = () => {
         <Route path="/description" element={<Description />} />
       </Routes>
       <Footer  />
-      </ProductCategoryProvider>
       </ContextProvider>
-    
     </>
   );
 };

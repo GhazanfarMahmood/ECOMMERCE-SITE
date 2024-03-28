@@ -1,15 +1,16 @@
-import React from 'react'
+import React, {useContext} from 'react'
 
 //CSS
 import './NewlyArrival.scss'
 
 //Data from Api
-import { ProductConsumer } from '../../../Context/ContextProvider'
+import { ProductContext }  from '../../../Context/ContextProvider'
+
 import ProductCom from '../../../common/ProductCom/ProductCom';
 
 const NewlyArrival = () => {
-     const newArrivalProducts = ProductConsumer();
-     const limitedArrival = newArrivalProducts.slice(newArrivalProducts.length - 5 , newArrivalProducts.length -1)
+  const { products }  = useContext(ProductContext);
+     const limitedArrival = products.slice(products.length - 5 , products.length -1)
   return (
     <>
     <div className="ms-3">

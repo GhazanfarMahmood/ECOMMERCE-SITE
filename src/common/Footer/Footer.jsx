@@ -15,12 +15,13 @@ import { FaFacebookF, FaLinkedinIn, FaTwitter } from "react-icons/fa";
 
 //Categories Button 
 import CategoriesButton from "../CategoriesButton/CategoriesButton";
+import { ProductContext } from "../../Context/ContextProvider";
 
 //ProductCategory function from CategoryContext file
-import { ProductCategoryContext } from "../../Context/CategoryContext";
+
 
 const Footer = () => {
-  const {handleCategoryClick, selectedCategory} = useContext(ProductCategoryContext);
+  const {handleCategoryClick, selectedCategory} = useContext(ProductContext);
   
 
   return (
