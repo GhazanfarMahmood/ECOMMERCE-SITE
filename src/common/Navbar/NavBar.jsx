@@ -23,6 +23,7 @@ const NavBarLinks = () => {
       <NavLink to={"/"}>Home</NavLink>
       <NavLink to={"/about"}>About</NavLink>
       <NavLink to={"/product"}>Product</NavLink>
+      <NavLink to={"/Description"}>Description</NavLink>
       <NavLink to={"/contact"}>Contact Us</NavLink>
       <NavLink to={"/cart"}>
         <FaShoppingCart className="add-cart-icon" />

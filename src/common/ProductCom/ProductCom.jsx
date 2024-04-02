@@ -3,12 +3,14 @@ import React, { useContext } from "react";
 //Product Component css
 import "./PorductCom.scss";
 import { ProductContext } from "../../Context/ContextProvider";
+import { useNavigate } from "react-router-dom";
 
 
 const ProductCom = ({ data, h1 }) => {
-  const {cartItems,  addToCart, addToDescription, removeFromCart } = useContext(
-    ProductContext
-  );
+ 
+  const navigate = useNavigate();
+  const {addToCart, addToDescription} = useContext(ProductContext)
+  
 
   return (
     <>
@@ -24,13 +26,17 @@ const ProductCom = ({ data, h1 }) => {
                   <img src={products.image} alt={products.title} />
                   <h3>{products.title.slice(0, 30)}...</h3>
                   <p>
-                    Price: <span>${products.price}</span>
+                    Price: <span>$ {Math.floor(products.price)}</span>
                   </p>
                   <div className="btn-gap">
-                    <button onClick={() =>addToCart(products.id)}>Add To Cart ({Number(cartItems[products.id])})</button>
+                    <button onClick={() =>{
+                      navigate("/cart")
+                      addToCart(products)
+                    }}>Add To Cart </button>
                     <button
                       onClick={() => {
-                        addToDescription()
+                        navigate("/description")
+                        addToDescription(products)
                       }}
                     >
                       Description

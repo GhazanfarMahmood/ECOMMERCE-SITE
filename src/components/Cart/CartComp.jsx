@@ -1,8 +1,12 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import { ProductContext } from '../../Context/ContextProvider'
 
-const CartComp = () => {
+const CartComp = ({data}) => {
+  
   return (
-    <div>CartComp</div>
+    <div>
+      <h1>{data.title}</h1>
+    </div>
   )
 }
 
