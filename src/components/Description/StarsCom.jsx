@@ -5,7 +5,6 @@ import { FaRegStar } from "react-icons/fa";
 import { FaStarHalfAlt } from "react-icons/fa";
 
 const StarsCom = ({data}) => {
-    console.log(data)
  const ratingStar =  Array.from({length : 5}, (_, index) =>{
 let number = index + 0.5;
 return (

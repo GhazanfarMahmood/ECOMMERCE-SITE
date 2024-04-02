@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, {useContext, useState} from "react";
 
 //Navbar css
 import "./NavBar.scss";
@@ -13,25 +13,10 @@ import {MenuOutlined } from '@ant-design/icons'
 //Drawer 
 import { Drawer } from "antd";
 
+// ProductContext from ContextProvider
+import { ProductContext } from "../../Context/ContextProvider";
 
 
-const NavBarLinks = () => { 
-    
-  return (
-    <>
-    <ul className="nav-links">
-      <NavLink to={"/"}>Home</NavLink>
-      <NavLink to={"/about"}>About</NavLink>
-      <NavLink to={"/product"}>Product</NavLink>
-      <NavLink to={"/Description"}>Description</NavLink>
-      <NavLink to={"/contact"}>Contact Us</NavLink>
-      <NavLink to={"/cart"}>
-        <FaShoppingCart className="add-cart-icon" />
-      </NavLink>
-      </ul>
-    </>
-  );
-};
 
 const NavBar = () => {
     const [open, setOpen] = useState(false);
@@ -63,7 +48,7 @@ const NavBar = () => {
         onClose={handleDrawerClose}
         >
         <div className="mob-nav">
-         <NavBarLinks />  
+         <NavBarLinks handleDrawerClose={handleDrawerClose} />  
          </div>
         </Drawer>
       </nav>
@@ -72,3 +57,26 @@ const NavBar = () => {
 };
 
 export default NavBar;
+
+
+const NavBarLinks = ({handleDrawerClose}) => { 
+  const {cartItems} = useContext(ProductContext);
+  
+    
+  return (
+    <>
+    <ul className="nav-links">
+      <NavLink to={"/"} onClick={handleDrawerClose}>Home</NavLink>
+      <NavLink to={"/about"} onClick={handleDrawerClose}>About</NavLink>
+      <NavLink to={"/product"} onClick={handleDrawerClose}>Product</NavLink>
+      <NavLink to={"/Description"} onClick={handleDrawerClose}>Description</NavLink>
+      <NavLink to={"/contact"} onClick={handleDrawerClose}>Contact Us</NavLink>
+      <NavLink to={"/cart"} onClick={handleDrawerClose}>
+        <FaShoppingCart className="add-cart-icon" />
+          <div className="cart-items-state">{cartItems.length}</div>
+      </NavLink>
+        
+      </ul>
+    </>
+  );
+};

@@ -23,14 +23,32 @@ nav {
         font-size: 1.1rem;
         margin-left: 1rem;
         color: var(--dark-color);
+        display: block;
+        position: relative;
 
         &.active {
           color: var(--secondary-color);
         }
 
         .add-cart-icon {
-          font-size: 1.8rem;
+          font-size: 2rem;
           margin-left: 20px;
+        }
+
+        .cart-items-state{
+          position: absolute;
+          color: inherit;
+          top: -7px;
+          right: -7px;
+          background: white;
+          border-radius: 50%;
+          height: 25px;
+          width: 25px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border: 1px solid;
+          font-size: 14px;
         }
       }
     }
@@ -65,10 +83,32 @@ nav {
       margin-bottom: 20px;
       color: var(--dark-color);
       font-size: 1.1rem;
-      display: inline-block;
+      display: block;
+      position: relative;
 
       &.active {
         color: var(--secondary-color);
+      }
+
+      .add-cart-icon {
+        font-size: 2rem;
+        margin-left: 20px;
+      }
+
+      .cart-items-state{
+        position: absolute;
+        color: inherit;
+        top: -7px;
+        left: 39px;
+        background: white;
+        border-radius: 50%;
+        height: 25px;
+        width: 25px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid;
+        font-size: 14px;
       }
     }
   }

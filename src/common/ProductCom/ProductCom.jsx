@@ -30,7 +30,6 @@ const ProductCom = ({ data, h1 }) => {
                   </p>
                   <div className="btn-gap">
                     <button onClick={() =>{
-                      navigate("/cart")
                       addToCart(products)
                     }}>Add To Cart </button>
                     <button

@@ -1,5 +1,6 @@
 import React, { useContext } from 'react'
-import { ProductContext } from '../../Context/ContextProvider'
+
+import './Cart.scss'
 
 const CartComp = ({data}) => {
   
