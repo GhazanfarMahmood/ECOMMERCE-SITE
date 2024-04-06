@@ -21,6 +21,8 @@ import { Route, Routes } from "react-router-dom";
 
 //ContextProvider
 import { ContextProvider } from "./Context/ContextProvider";
+import CheckOut from "./pages/CheckOut/CheckOut";
+import ThanksPage from "./pages/ThanksPage/ThanksPage";
 
 
 const App = () => {
@@ -36,8 +38,10 @@ const App = () => {
         <Route path="/product" element={<Product />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/cart" element={<Cart />} />
-        <Route path="*" element={<ErrorPage />} />
         <Route path="/description" element={<Description />} />
+        <Route path="/checkout" element={<CheckOut />} />
+        <Route path="/thankspage" element={<ThanksPage />} />
+        <Route path="*" element={<ErrorPage />} />
       </Routes>
       <Footer  />
       </ContextProvider>

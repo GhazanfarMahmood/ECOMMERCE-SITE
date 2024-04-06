@@ -60,7 +60,7 @@ const Cart = () => {
             <div className="cart-price-container">
               <h2>Total Price : $ {Math.round(getCartTotal())}</h2>
               <div>
-              <button>Check Out</button>
+              <button onClick={() => navigate("/checkout")}>Check Out</button>
               <button className="clear-cart" onClick={clearCart}>Clear Cart</button>
               </div>
             </div>  

@@ -1,0 +1,48 @@
+.check-out-container {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+
+  .drop-down-card {
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgba(0, 0, 0, 0.33);
+    padding: 1.5rem;
+    border-radius: var(--secondary-border-radius);
+
+    label {
+      display: flex;
+      flex-direction: column;
+
+      span {
+        font-size: 1.2rem;
+        font-weight: 600;
+        margin-bottom: 5px;
+      }
+
+      input {
+        margin-bottom: 10px;
+        padding: 2px 5px;
+        font-size: 1.1rem;
+        border-radius: var(--secondary-border-radius);
+        border: 1px solid rgba(0, 0, 0, 0.33);
+        transition: all 0.3s ease-in-out;
+        outline: none;
+
+        &:focus{
+            border: 1px solid var(--secondary-color);
+        }
+
+      }
+
+    }
+
+    button{
+      margin-top: 10px;
+    }
+  }
+}
