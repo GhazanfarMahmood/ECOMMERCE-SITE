@@ -61,18 +61,21 @@
         align-items: center;
         margin-bottom: 30px;
   
-        input {
-          width: 50px;
-          padding: 5px 15px;
-        }
+       .value{
+        font-size: 1rem;
+        background: var(--light-color);
+        padding: 5px 20px;
+        margin: 0 5px;
+        border-radius: 5px;
+       }
   
-        button {
-          background: transparent;
+        .input-btn {
           border: 0;
           color: var(--dark-color);
-          font-size: 1.2rem;
+          font-size: 1rem;
           margin: 0px;
           padding: 0px 5px;
+          cursor: pointer;
         }
       }
       .delete-btn {
@@ -81,11 +84,7 @@
         align-items: center;
         font-size: 1.5rem;
         cursor: pointer;
-        transition: all 0.5s ease-in-out;
-  
-        &:hover {
-          color: var(--secondary-color);
-        }
+        color: var(--secondary-color);
       }
     }
 
@@ -114,6 +113,10 @@
 
     h2{
         margin-bottom: 20px;
+    }
+
+    .clear-cart{
+      margin-left: 10px;
     }
 
     

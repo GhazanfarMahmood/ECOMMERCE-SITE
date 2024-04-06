@@ -33,7 +33,7 @@ const DescriptionCom = ({ data }) => {
                 Category: <p>{data.category}</p>
               </span>
               <span>
-                Rating:{" "}
+                Rating:
                 <p>
                   <StarsCom data={data.rating.rate} />
                 </p>
