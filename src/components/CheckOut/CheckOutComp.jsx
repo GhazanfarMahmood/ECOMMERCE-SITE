@@ -20,8 +20,6 @@ const CheckOutComp = () => {
 
   const paymentSubmit = (e) => {
     e.preventDefault();
-    console.log(`${paymentValue.CardNumber}, ${paymentValue.Data}, ${paymentValue.password}, ${paymentValue.CardName}`);
-    setPaymentValue({ CardNumber: "", Data: "", password: "", CardName: "" });
     navigate("/thankspage")
   };
 

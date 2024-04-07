@@ -19,7 +19,6 @@ const ContactForm = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // console.log(`${inputValue.name}, ${inputValue.email}, ${inputValue.password}, ${inputValue.phoneNumber}, ${inputValue.message}`)
     setInputValue({name: "", email: "", password: "", phoneNumber: "", message: ""})
   };
   return (

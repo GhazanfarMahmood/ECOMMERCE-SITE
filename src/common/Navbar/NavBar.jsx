@@ -31,7 +31,7 @@ const NavBar = () => {
 
   return (
     <>
-      <nav className="ps-3">
+      <nav className="ps-3 "  >
         <div className="nav-icon">Snap-Store</div>
         <div className="web-nav">
         <NavBarLinks />

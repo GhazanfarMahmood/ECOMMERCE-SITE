@@ -6,6 +6,10 @@ nav {
   padding-top: 20px;
   padding-bottom: 20px;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 10px -1px;
+  position: fixed;
+  width: 100%;
+  background: var(--light-color);
+  top: 0px;
 
   .nav-icon {
     color: var(--secondary-color);
