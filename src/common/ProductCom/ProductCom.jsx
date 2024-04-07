@@ -2,7 +2,11 @@ import React, { useContext } from "react";
 
 //Product Component css
 import "./PorductCom.scss";
+
+// Context Provider from Product context
 import { ProductContext } from "../../Context/ContextProvider";
+
+// Use Navigate from react-router-dom for navigation
 import { useNavigate } from "react-router-dom";
 
 

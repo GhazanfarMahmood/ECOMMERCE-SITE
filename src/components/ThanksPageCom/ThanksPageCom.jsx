@@ -1,8 +1,12 @@
 import React from 'react'
 
+// Css for thanks page 
 import './ThanksPage.scss'
 
+// icon from react icon
 import { AiFillDollarCircle } from "react-icons/ai"
+
+// Use Navigate from react-router-dom for navigation
 import { useNavigate } from 'react-router-dom'
 
 const ThanksPageCom = () => {

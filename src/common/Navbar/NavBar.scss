@@ -9,7 +9,8 @@ nav {
   position: fixed;
   width: 100%;
   background: var(--light-color);
-  top: 0px;
+  top: 0 !important;
+  z-index: 1;
 
   .nav-icon {
     color: var(--secondary-color);
@@ -44,7 +45,7 @@ nav {
           color: inherit;
           top: -7px;
           right: -7px;
-          background: white;
+          background: var(--light-color);
           border-radius: 50%;
           height: 25px;
           width: 25px;
@@ -104,7 +105,7 @@ nav {
         color: inherit;
         top: -7px;
         left: 39px;
-        background: white;
+        background: var(--light-color);
         border-radius: 50%;
         height: 25px;
         width: 25px;

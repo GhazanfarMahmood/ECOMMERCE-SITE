@@ -1,13 +1,12 @@
 import React, {useContext} from 'react'
 
-//CSS
-import './PopularProducts.scss'
-
 // Data from Context Provider
 
+import  { ProductContext }  from '../../../Context/ContextProvider';
+
+// Product component for showing
 import ProductCom from '../../../common/ProductCom/ProductCom';
 
-import  { ProductContext }  from '../../../Context/ContextProvider';
 
 const PopularProducts = () => {
    const {products} = useContext(ProductContext);

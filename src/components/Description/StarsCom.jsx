@@ -1,8 +1,7 @@
 import React from 'react'
 
-import { FaStar } from "react-icons/fa";
-import { FaRegStar } from "react-icons/fa";
-import { FaStarHalfAlt } from "react-icons/fa";
+// stars from react icons
+import { FaStar, FaStarHalfAlt,  FaRegStar  } from "react-icons/fa";
 
 const StarsCom = ({data}) => {
  const ratingStar =  Array.from({length : 5}, (_, index) =>{

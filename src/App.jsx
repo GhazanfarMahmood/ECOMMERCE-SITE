@@ -1,4 +1,3 @@
-import React , { useState } from "react";
 
 //Css 
 import "./App.scss";
@@ -15,14 +14,14 @@ import Contact from "./pages/Contact/Contact";
 import Cart from './pages/Cart/Cart'
 import ErrorPage from "./pages/ErrorPage/ErrorPage";
 import Description from "./pages/Description/Description";
+import CheckOut from "./pages/CheckOut/CheckOut";
+import ThanksPage from "./pages/ThanksPage/ThanksPage";
 
 // Route and Routes from react-router-dom
 import { Route, Routes } from "react-router-dom";
 
 //ContextProvider
 import { ContextProvider } from "./Context/ContextProvider";
-import CheckOut from "./pages/CheckOut/CheckOut";
-import ThanksPage from "./pages/ThanksPage/ThanksPage";
 
 
 const App = () => {

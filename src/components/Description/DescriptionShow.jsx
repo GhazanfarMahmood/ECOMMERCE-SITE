@@ -1,4 +1,6 @@
 import React from 'react'
+
+// Use navigate from react-router-dom
 import { useNavigate } from 'react-router-dom'
 
 const DescriptionShow = () => {

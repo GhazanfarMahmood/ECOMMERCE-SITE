@@ -1,4 +1,6 @@
 import React from 'react'
+
+// Collapse component from ant design
 import { Collapse } from 'antd'
 
 const { Panel } = Collapse;

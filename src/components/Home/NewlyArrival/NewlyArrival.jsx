@@ -1,11 +1,9 @@
 import React, {useContext} from 'react'
 
-//CSS
-import './NewlyArrival.scss'
-
 //Data from Api
 import { ProductContext }  from '../../../Context/ContextProvider'
 
+// Product component for showing data
 import ProductCom from '../../../common/ProductCom/ProductCom';
 
 const NewlyArrival = () => {

@@ -1,6 +1,6 @@
 .product-container{
     display: flex;
-    gap: 20px;
+    gap: var(--display-gap);
 
     .Cate-button-container{
         display: flex;
@@ -15,7 +15,7 @@
           
             box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
             padding: 1rem;
-            border-radius: 20px;
+            border-radius: var(--primary-border-radius);
             height: 400px;
     
             h3{

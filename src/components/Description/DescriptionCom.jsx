@@ -1,13 +1,27 @@
+// Css for description page
 import "./Description.scss";
+
+// UseNavigate for navigation from react-router-dom
 import { useNavigate } from "react-router-dom";
 
+// Stars Component for rating
 import StarsCom from "./StarsCom";
 
+// UseContext from react
+import { useContext } from "react";
+
+//Context Provider from Product Context
+import { ProductContext } from "../../Context/ContextProvider";
+
+
+
 const DescriptionCom = ({ data }) => {
+const {clearDescription } = useContext(ProductContext)
   const navigate = useNavigate();
 
   const clearPageFunc = () => {
     navigate("/product");
+    clearDescription();
   };
 
   return (

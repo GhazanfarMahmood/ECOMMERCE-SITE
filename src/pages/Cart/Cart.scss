@@ -4,7 +4,7 @@
 .cart-main-container{
   display: flex;
   width: 100%;
-  gap: 20px;
+  gap: var(--display-gap);
   margin-top: 3rem;
 
 

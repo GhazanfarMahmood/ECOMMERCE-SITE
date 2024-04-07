@@ -15,7 +15,7 @@
   .services-items {
     margin-top: 2rem;
     display: flex;
-    gap: 20px;
+    gap: var(--display-gap);
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
@@ -24,7 +24,7 @@
         display: flex;
         align-items: start;
         padding: 1.2rem;
-        gap: 20px;
+        gap: var(--display-gap);
         width: 300px;
         border-radius: var(--primary-border-radius);
         box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;

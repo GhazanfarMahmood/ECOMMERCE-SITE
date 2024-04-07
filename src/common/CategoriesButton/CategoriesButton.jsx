@@ -1,8 +1,5 @@
 import React, {useState} from 'react'
 
-// Categories Button css
-import './CategoriesButton.scss';
-
 //Categories Icon from react icons
 import {TbCategoryPlus } from 'react-icons/tb'
 

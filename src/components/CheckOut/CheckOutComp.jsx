@@ -1,10 +1,19 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 
+// Css for checkout Components
 import "./CheckOut.scss";
+
+// Dropdown component
 import DropDown from "./DropDown";
+
+// Use Navigate for navigation from react-router-dom
 import { useNavigate } from "react-router-dom";
 
+// Context Provider from product context 
+import { ProductContext } from "../../Context/ContextProvider";
+
 const CheckOutComp = () => {
+  const {clearCart} = useContext(ProductContext)
   const [paymentValue, setPaymentValue] = useState({
     CardNumber: "",
     Data: "",
@@ -20,7 +29,8 @@ const CheckOutComp = () => {
 
   const paymentSubmit = (e) => {
     e.preventDefault();
-    navigate("/thankspage")
+    navigate("/thankspage");
+    clearCart();
   };
 
   return (

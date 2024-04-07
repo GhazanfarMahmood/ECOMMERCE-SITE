@@ -15,9 +15,6 @@ import CategoriesButton from '../../common/CategoriesButton/CategoriesButton'
 //Product Component
 import ProductCom from '../../common/ProductCom/ProductCom'
 
-//Category Context from context file
-
-
 //ContextProvider from Context file
 import {  ProductContext } from '../../Context/ContextProvider'
 

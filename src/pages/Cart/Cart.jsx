@@ -1,13 +1,21 @@
-import React, { useContext, useEffect, useState } from "react";
+import React, { useContext } from "react";
 
 //CrumbLink component
 import BreadCrumbLink from "../../common/BreadCrumbLink/BreadCrumbLink";
+
+// Context Provider from Product Context 
 import { ProductContext } from "../../Context/ContextProvider";
+
+// Icons from react icons
 import { MdDelete } from "react-icons/md";
 import { FaPlus, FaMinus } from "react-icons/fa";
 
+// Css for Cart page
 import "./Cart.scss";
+
+// Use Navigate hook from react-router-dom
 import { useNavigate } from "react-router-dom";
+
 
 const Cart = () => {
   const { cartItems, removeFromCart, getCartTotal, clearCart, IncrementCart, decrementCart, addToCart } = useContext(ProductContext);
@@ -17,8 +25,8 @@ const Cart = () => {
    
   return (
     <>
-      <div className="ms-3">
         <BreadCrumbLink pageName={"Cart"} />
+      <div className="ms-3">
         {cartItems.length > 0 ? (
           <div className="cart-main-container">
             <div className="width">
